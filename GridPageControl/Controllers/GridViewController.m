@@ -26,7 +26,7 @@ static NSArray *pageControlColorList = nil;
         CGRect frameRed = CGRectMake(59.5f, 50, 100, 100);
         CGRect frameGreen = CGRectMake(160.5f, 50, 100, 100);
         CGRect frameBlue = CGRectMake(59.5f, 151, 201, 65);
-        CGRect pageNumberFrame = CGRectMake(59.5f, 0, 200, 30);
+        CGRect pageNumberFrame = CGRectMake(0, 0, 320, 30);
         
         _redBox = [[UIView alloc] initWithFrame:frameRed];
         _greenBox = [[UIView alloc] initWithFrame:frameGreen];
@@ -38,6 +38,7 @@ static NSArray *pageControlColorList = nil;
         _blueBox.backgroundColor = [UIColor blueColor];
         
         self.pageNumberLabel.textAlignment = NSTextAlignmentCenter;
+        self.pageNumberLabel.backgroundColor = [UIColor orangeColor];
         
         [self.view addSubview:_redBox];
         [self.view addSubview:_greenBox];
