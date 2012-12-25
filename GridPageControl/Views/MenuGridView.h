@@ -1,5 +1,5 @@
 //
-//  GridViewController.h
+//  MenuGridView.h
 //  GridPageControl
 //
 //  Created by Ömer Avci on 25.12.12.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GridViewController : UIViewController
+@interface MenuGridView : UIView
 
-@property (nonatomic, assign) int pageNumber;
-
-- (id)initWithFrame:(CGRect)frame;
+@property (nonatomic, readonly) UILabel *menuNameLabel;
 
 @end

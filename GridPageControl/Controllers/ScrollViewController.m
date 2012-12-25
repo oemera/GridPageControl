@@ -8,6 +8,9 @@
 
 #import "ScrollViewController.h"
 #import "GridViewController.h"
+#import "FirstGridViewController.h"
+#import "SecondGridViewController.h"
+#import "ThirdGridViewController.h"
 
 static NSUInteger kNumberOfPages = 3;
 
@@ -61,8 +64,16 @@ static NSUInteger kNumberOfPages = 3;
     // replace the placeholder if necessary
     GridViewController *controller = [self.viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null]) {
-        NSLog(@"%d", page);
-        controller = [[GridViewController alloc] init];
+        CGRect bounds = CGRectMake(0, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+        if (page == 0) {
+            controller = [[FirstGridViewController alloc] initWithFrame:bounds];
+        } else if (page == 1) {
+            controller = [[SecondGridViewController alloc] initWithFrame:bounds];
+        } else if (page == 2) {
+            controller = [[ThirdGridViewController alloc] initWithFrame:bounds];
+        } else {
+            controller = [[GridViewController alloc] initWithFrame:bounds];
+        }
         controller.pageNumber = page;
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
     }
