@@ -18,7 +18,6 @@
 		F0FDFBBB1687384800A769D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0FDFBBA1687384800A769D9 /* Default@2x.png */; };
 		F0FDFBBD1687384800A769D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0FDFBBC1687384800A769D9 /* Default-568h@2x.png */; };
 		F0FDFBC01687384800A769D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FDFBBE1687384800A769D9 /* MainStoryboard.storyboard */; };
-		F0FDFBE3168748F700A769D9 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FDFBE2168748F700A769D9 /* ColorViewController.m */; };
 		F0FDFBE71687491E00A769D9 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FDFBE61687491E00A769D9 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		F0FDFBBA1687384800A769D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F0FDFBBC1687384800A769D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F0FDFBBF1687384800A769D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F0FDFBE1168748F700A769D9 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorViewController.h; path = Controllers/ColorViewController.h; sourceTree = "<group>"; };
-		F0FDFBE2168748F700A769D9 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorViewController.m; path = Controllers/ColorViewController.m; sourceTree = "<group>"; };
 		F0FDFBE51687491E00A769D9 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewController.h; path = Controllers/ScrollViewController.h; sourceTree = "<group>"; };
 		F0FDFBE61687491E00A769D9 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewController.m; path = Controllers/ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +112,6 @@
 		F0FDFBC91687385000A769D9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0FDFBE1168748F700A769D9 /* ColorViewController.h */,
-				F0FDFBE2168748F700A769D9 /* ColorViewController.m */,
 				F0FDFBE51687491E00A769D9 /* ScrollViewController.h */,
 				F0FDFBE61687491E00A769D9 /* ScrollViewController.m */,
 				F036675A1688B50900A3DCB6 /* GridViewController.h */,
@@ -194,7 +189,6 @@
 			files = (
 				F0FDFBB31687384800A769D9 /* main.m in Sources */,
 				F0FDFBB71687384800A769D9 /* DOAppDelegate.m in Sources */,
-				F0FDFBE3168748F700A769D9 /* ColorViewController.m in Sources */,
 				F0FDFBE71687491E00A769D9 /* ScrollViewController.m in Sources */,
 				F036675C1688B50900A3DCB6 /* GridViewController.m in Sources */,
 			);

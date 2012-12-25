@@ -7,7 +7,8 @@
 //
 
 #import "GridViewController.h"
-#import "ColorViewController.h"
+
+static NSArray *pageControlColorList = nil;
 
 @interface GridViewController () {
     UIView *_redBox;
@@ -22,7 +23,6 @@
 - (id)init {
     self = [super init];
     if (self) {
-
         CGRect frameRed = CGRectMake(59.5f, 50, 100, 100);
         CGRect frameGreen = CGRectMake(160.5f, 50, 100, 100);
         CGRect frameBlue = CGRectMake(59.5f, 151, 201, 65);
@@ -50,8 +50,20 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", self.pageNumber + 1];
-    //self.view.backgroundColor = [ColorViewController pageControlColorWithIndex:self.pageNumber];
-    self.view.backgroundColor = [UIColor orangeColor];
+}
+
+#pragma mark - Page Colors
+
++ (UIColor *)pageControlColorWithIndex:(NSUInteger)index {
+    if (pageControlColorList == nil) {
+        pageControlColorList = [[NSArray alloc] initWithObjects:[UIColor redColor],
+                                [UIColor greenColor], [UIColor magentaColor],
+                                [UIColor blueColor], [UIColor orangeColor],
+                                [UIColor brownColor], [UIColor grayColor], nil];
+    }
+	
+    // Mod the index by the list length to ensure access remains in bounds.
+    return [pageControlColorList objectAtIndex:index % [pageControlColorList count]];
 }
 
 @end
