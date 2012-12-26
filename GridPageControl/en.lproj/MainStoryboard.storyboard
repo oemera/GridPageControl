@@ -17,6 +17,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" red="0.90217391304347827" green="0.90217391304347827" blue="0.90217391304347827" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="changePage:" destination="2" eventType="valueChanged" id="FP8-KH-EAa"/>
+                                </connections>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hIp-3N-V1v">
                                 <rect key="frame" x="0.0" y="110" width="320" height="280"/>
