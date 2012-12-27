@@ -21,7 +21,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.menuNameLabel.text = @"FirstMenu";
-        self.menuNameLabel.backgroundColor = [UIColor blueColor];
         
         CGRect frameRed = CGRectMake(59.5f, 60, 100, 100);
         CGRect frameGreen = CGRectMake(160.5f, 60, 100, 100);

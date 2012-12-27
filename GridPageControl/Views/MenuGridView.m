@@ -34,7 +34,7 @@
         CGRect menuNameFrame = CGRectMake(0, 0, 320, 30);
         _menuNameLabel = [[UILabel alloc] initWithFrame:menuNameFrame];
         _menuNameLabel.textAlignment = NSTextAlignmentCenter;
-        _menuNameLabel.backgroundColor = [UIColor whiteColor];
+        _menuNameLabel.backgroundColor = [UIColor orangeColor];
         
         [self addSubview:_menuNameLabel];
         [self addSubview:_backButton];

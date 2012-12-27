@@ -22,7 +22,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.menuNameLabel.text = @"SecondMenu";
-        self.menuNameLabel.backgroundColor = [UIColor yellowColor];
         
         // CGRectMake(X, Y, width, height)
         CGRect frameRed = CGRectMake(59.5f, 45, 100, 100);
