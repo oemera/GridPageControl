@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuGridView.h"
 
-@interface GridViewController : UIViewController
+@interface GridViewController : UIViewController {
+
+@protected
+    MenuGridView *_menuGrid;
+}
 
 @property (nonatomic, assign) int pageNumber;
+@property (nonatomic, readonly) MenuGridView *menuGrid;
 
 - (id)initWithFrame:(CGRect)frame;
 

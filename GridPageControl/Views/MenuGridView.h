@@ -11,5 +11,7 @@
 @interface MenuGridView : UIView
 
 @property (nonatomic, readonly) UILabel *menuNameLabel;
+@property (nonatomic, readonly) UIView *backButton;
+@property (nonatomic, readonly) UIView *forwardButton;
 
 @end

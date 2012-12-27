@@ -15,6 +15,10 @@
 		F036677E168A12D900A3DCB6 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F036677D168A12D800A3DCB6 /* GridViewController.m */; };
 		F0366781168A1A1800A3DCB6 /* ThirdMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0366780168A1A1800A3DCB6 /* ThirdMenuGridView.m */; };
 		F0366784168A1B8F00A3DCB6 /* ThirdGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0366783168A1B8F00A3DCB6 /* ThirdGridViewController.m */; };
+		F03667A0168B6D0800A3DCB6 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = F036679C168B6D0800A3DCB6 /* arrow-left.png */; };
+		F03667A2168B6D0800A3DCB6 /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = F036679E168B6D0800A3DCB6 /* arrow-right.png */; };
+		F0A18DF4168CB5CB00DF57AC /* arrow-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A18DF2168CB5CB00DF57AC /* arrow-left@2x.png */; };
+		F0A18DF5168CB5CB00DF57AC /* arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A18DF3168CB5CB00DF57AC /* arrow-right@2x.png */; };
 		F0FDFBA71687384800A769D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FDFBA61687384800A769D9 /* UIKit.framework */; };
 		F0FDFBA91687384800A769D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FDFBA81687384800A769D9 /* Foundation.framework */; };
 		F0FDFBAB1687384800A769D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FDFBAA1687384800A769D9 /* CoreGraphics.framework */; };
@@ -45,6 +49,10 @@
 		F0366780168A1A1800A3DCB6 /* ThirdMenuGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdMenuGridView.m; path = Views/ThirdMenuGridView.m; sourceTree = "<group>"; };
 		F0366782168A1B8F00A3DCB6 /* ThirdGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdGridViewController.h; path = Controllers/ThirdGridViewController.h; sourceTree = "<group>"; };
 		F0366783168A1B8F00A3DCB6 /* ThirdGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdGridViewController.m; path = Controllers/ThirdGridViewController.m; sourceTree = "<group>"; };
+		F036679C168B6D0800A3DCB6 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-left.png"; path = "Resources/arrow-left.png"; sourceTree = "<group>"; };
+		F036679E168B6D0800A3DCB6 /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-right.png"; path = "Resources/arrow-right.png"; sourceTree = "<group>"; };
+		F0A18DF2168CB5CB00DF57AC /* arrow-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-left@2x.png"; path = "Resources/arrow-left@2x.png"; sourceTree = "<group>"; };
+		F0A18DF3168CB5CB00DF57AC /* arrow-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-right@2x.png"; path = "Resources/arrow-right@2x.png"; sourceTree = "<group>"; };
 		F0FDFBA21687384800A769D9 /* GridPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FDFBA61687384800A769D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0FDFBA81687384800A769D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,10 +100,22 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F036679B168B6CEF00A3DCB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0A18DF2168CB5CB00DF57AC /* arrow-left@2x.png */,
+				F0A18DF3168CB5CB00DF57AC /* arrow-right@2x.png */,
+				F036679C168B6D0800A3DCB6 /* arrow-left.png */,
+				F036679E168B6D0800A3DCB6 /* arrow-right.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F0FDFB971687384800A769D9 = {
 			isa = PBXGroup;
 			children = (
 				F0FDFBAC1687384800A769D9 /* GridPageControl */,
+				F036679B168B6CEF00A3DCB6 /* Resources */,
 				F0FDFBA51687384800A769D9 /* Frameworks */,
 				F0FDFBA31687384800A769D9 /* Products */,
 			);
@@ -220,6 +240,10 @@
 				F0FDFBBB1687384800A769D9 /* Default@2x.png in Resources */,
 				F0FDFBBD1687384800A769D9 /* Default-568h@2x.png in Resources */,
 				F0FDFBC01687384800A769D9 /* MainStoryboard.storyboard in Resources */,
+				F03667A0168B6D0800A3DCB6 /* arrow-left.png in Resources */,
+				F03667A2168B6D0800A3DCB6 /* arrow-right.png in Resources */,
+				F0A18DF4168CB5CB00DF57AC /* arrow-left@2x.png in Resources */,
+				F0A18DF5168CB5CB00DF57AC /* arrow-right@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

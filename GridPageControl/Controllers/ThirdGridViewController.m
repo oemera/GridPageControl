@@ -19,8 +19,8 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _menu = [[ThirdMenuGridView alloc] initWithFrame:self.view.frame];
-        [self.view addSubview:_menu];
+        _menuGrid = [[ThirdMenuGridView alloc] initWithFrame:self.view.frame];
+        [self.view addSubview:_menuGrid];
     }
     return self;
 }

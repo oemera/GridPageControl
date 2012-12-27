@@ -27,11 +27,11 @@
         
         // CGRectMake(X, Y, width, height)
         CGRect frameRed = CGRectMake(47, 51, 75, 75);
-        CGRect frameGreen = CGRectMake(122, 51, 75, 75);
-        CGRect frameBlue = CGRectMake(197, 51, 75, 75);
+        CGRect frameGreen = CGRectMake(123, 51, 75, 75);
+        CGRect frameBlue = CGRectMake(199, 51, 75, 75);
         
-        CGRect frameYellow = CGRectMake(47, 127, 112.5f, 112.5f);
-        CGRect frameOrange = CGRectMake(159.5f, 127, 112.5f, 112.5f);
+        CGRect frameYellow = CGRectMake(47, 127, 113, 112.5f);
+        CGRect frameOrange = CGRectMake(161, 127, 113, 112.5f);
         
         _redBox = [[UIView alloc] initWithFrame:frameRed];
         _greenBox = [[UIView alloc] initWithFrame:frameGreen];

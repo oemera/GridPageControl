@@ -9,18 +9,13 @@
 #import "SecondGridViewController.h"
 #import "SecondMenuGridView.h"
 
-@interface SecondGridViewController () {
-    SecondMenuGridView *_menu;
-}
-@end
-
 @implementation SecondGridViewController
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _menu = [[SecondMenuGridView alloc] initWithFrame:self.view.frame];
-        [self.view addSubview:_menu];
+        _menuGrid = [[SecondMenuGridView alloc] initWithFrame:self.view.frame];
+        [self.view addSubview:_menuGrid];
     }
     return self;
 }

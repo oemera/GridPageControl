@@ -65,6 +65,13 @@ static NSUInteger kNumberOfPages = 3;
     GridViewController *controller = [self.viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null]) {
         CGRect bounds = CGRectMake(0, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+        UITapGestureRecognizer *backButtonTap =
+            [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(turnPageBack:)];
+        backButtonTap.numberOfTapsRequired = 1;
+        UITapGestureRecognizer *forwardButtonTap =
+            [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(turnPageForward:)];
+        forwardButtonTap.numberOfTapsRequired = 1;
+        
         if (page == 0) {
             controller = [[FirstGridViewController alloc] initWithFrame:bounds];
         } else if (page == 1) {
@@ -74,6 +81,9 @@ static NSUInteger kNumberOfPages = 3;
         } else {
             controller = [[GridViewController alloc] initWithFrame:bounds];
         }
+        
+        [controller.menuGrid.backButton addGestureRecognizer:backButtonTap];
+        [controller.menuGrid.forwardButton addGestureRecognizer:forwardButtonTap];
         controller.pageNumber = page;
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
     }
@@ -120,9 +130,22 @@ static NSUInteger kNumberOfPages = 3;
 
 #pragma mark - Actions
 
+- (void)turnPageBack:(id)sender {
+    int page = self.pageControl.currentPage;
+    [self changePageWithPage:page - 1];
+}
+
+- (void)turnPageForward:(id)sender {
+    int page = self.pageControl.currentPage;
+    [self changePageWithPage:page + 1];
+}
+
 - (IBAction)changePage:(id)sender {
     int page = self.pageControl.currentPage;
-	
+    [self changePageWithPage:page];
+}
+
+- (void)changePageWithPage:(int)page {
     // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
     [self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
@@ -136,6 +159,7 @@ static NSUInteger kNumberOfPages = 3;
     
 	// Set the boolean used when scrolls originate from the UIPageControl. See scrollViewDidScroll: above.
     pageControlUsed = YES;
+    self.pageControl.currentPage = page;
 }
 
 @end

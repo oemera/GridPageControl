@@ -9,18 +9,13 @@
 #import "FirstGridViewController.h"
 #import "FirstMenuGridView.h"
 
-@interface FirstGridViewController () {
-    FirstMenuGridView *_menu;
-}
-@end
-
 @implementation FirstGridViewController
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _menu = [[FirstMenuGridView alloc] initWithFrame:self.view.frame];
-        [self.view addSubview:_menu];
+        _menuGrid = [[FirstMenuGridView alloc] initWithFrame:self.view.frame];
+        [self.view addSubview:_menuGrid];
     }
     return self;
 }
