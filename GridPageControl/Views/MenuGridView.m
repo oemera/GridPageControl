@@ -21,20 +21,18 @@
         
         _backButton = [[UIView alloc] initWithFrame:backButtonFrame];
         _forwardButton = [[UIView alloc] initWithFrame:forwardButtonFrame];
-        
-        UIImageView *arrowLeft = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow-left.png"]];
-        UIImageView *arrowRight = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow-right.png"]];
-        
+        UIImageView *arrowLeft = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow-left-white.png"]];
+        UIImageView *arrowRight = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"arrow-right-white.png"]];
         arrowLeft.center = buttonCenter;
         arrowRight.center = buttonCenter;
-        
         [_backButton addSubview:arrowLeft];
         [_forwardButton addSubview:arrowRight];
         
         CGRect menuNameFrame = CGRectMake(0, 0, 320, 30);
         _menuNameLabel = [[UILabel alloc] initWithFrame:menuNameFrame];
         _menuNameLabel.textAlignment = NSTextAlignmentCenter;
-        _menuNameLabel.backgroundColor = [UIColor orangeColor];
+        _menuNameLabel.backgroundColor = [UIColor blackColor];
+        _menuNameLabel.textColor = [UIColor whiteColor];
         
         [self addSubview:_menuNameLabel];
         [self addSubview:_backButton];

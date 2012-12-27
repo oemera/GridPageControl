@@ -23,6 +23,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.menuNameLabel.text = @"ThirdMenu";
+        self.menuNameLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menu-badge-yellow.png"]];
         
         // CGRectMake(X, Y, width, height)
         CGRect frameRed = CGRectMake(47, 51, 75, 75);
